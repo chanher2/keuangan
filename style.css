@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f5f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .balance h2 {
+    color: #2d6a4f;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  input, button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .filter {
+    margin-top: 20px;
+  }
+  
+  #transaction-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  #transaction-list li {
+    background: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 6px solid #2d6a4f;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  canvas {
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .history-section {
+    margin-top: 40px;
+  }
+  
+  .history-section h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  #history-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #history-list li {
+    background: #eef1f3;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-left: 4px solid #0077b6;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  

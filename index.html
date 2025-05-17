@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pengatur Keuangan Harian</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pengatur Keuangan Harian</h1>
+
+    <div class="balance">
+      <h2>Saldo Saat Ini: <span id="balance">Rp0</span></h2>
+    </div>
+
+    <form id="transaction-form">
+      <input type="text" id="description" placeholder="Deskripsi" required />
+      <input type="number" id="amount" placeholder="Jumlah (misal: -50000 atau 100000)" required />
+      <input type="date" id="date" required />
+      <button type="submit">Tambah Transaksi</button>
+    </form>
+
+    <!-- Tombol reset -->
+    <button id="reset-btn" style="background-color:#d90429; margin-top:10px;">Reset Semua Data</button>
+
+    <div class="filter">
+      <label for="filter-date">Filter berdasarkan tanggal:</label>
+      <input type="date" id="filter-date" />
+    </div>
+
+    <ul id="transaction-list"></ul>
+
+    <canvas id="summaryChart" width="400" height="200"></canvas>
+
+    <div class="history-section">
+      <h2>History Keuangan</h2>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
